@@ -1,19 +1,19 @@
 // Write an function that calculates the sum of all numbers from 1 up to (and including) some number (n).
 
 // SOLUTION 1 -- This solution adds to a running total and increments up to n then returns the total.
-// function addUpTo(n) {
-//     let total = 0;
-//     for (let i = 1; i <= n; i++) {
-//         total += i
-//     }
-//     return total;
-// }
+function addUpTo(n) {
+    let total = 0;
+    for (let i = 1; i <= n; i++) {
+        total += i
+    }
+    return total;
+}
 
 
 // SOLUTION 2 -- http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html Sigma notation
-function addUpTo(n) {
-    return n * (n + 1) / 2
-}
+// function addUpTo(n) {
+//     return n * (n + 1) / 2
+// }
 
 // console.log(addUpTo(30))
 // console.log(addUpTo(105))
