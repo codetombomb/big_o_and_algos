@@ -1,5 +1,7 @@
 // Write an function that calculates the sum of all numbers from 1 up to (and including) some number (n).
 
+//O(n)
+
 // SOLUTION 1 -- This solution adds to a running total and increments up to n then returns the total.
 function addUpTo(n) {
     let total = 0;
@@ -9,6 +11,7 @@ function addUpTo(n) {
     return total;
 }
 
+// This is going to run in constant time or O(1)
 
 // SOLUTION 2 -- http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/runsums/triNbProof.html Sigma notation
 // function addUpTo(n) {
