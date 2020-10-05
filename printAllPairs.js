@@ -1,4 +1,5 @@
 
+// This is an example of quadratic f(n)
 // Big O of n^2
 
 function printAllPairs(n) {
