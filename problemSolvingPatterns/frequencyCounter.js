@@ -1,3 +1,20 @@
+//                     Frequency Counter Pattern
+
+
+// This pattern uses objects or sets to 
+// collect values/frequencies of values 
+
+// This can often avoid the need for 
+// nested loops of O(n^2) operations 
+// with arrays / strings
+
+// AN EXAMPLE 
+// Write a function called same, which accepts two arrays. 
+// The function should return true if every value in the 
+// array has it’s corresponding value squared in the second 
+// array. The frequency of values must be the same.
+
+
 // Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formend by rearranging the letters of another, such as cinema, formed from iceman
 
 validAnagram('', '') // True
