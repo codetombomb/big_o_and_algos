@@ -1,4 +1,4 @@
-//                          BUBBLE SORT
+//                          BUBBLE SORT time complexity: (O(n^2)), space complexity: (O(1))
 // Takes in an array 
 // - Start looping with a variable called i from the end of the array towards the beginning 
 // - Start an inner loop with a variable called j from the beginning until i - 1

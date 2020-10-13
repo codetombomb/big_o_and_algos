@@ -1,4 +1,4 @@
-//                                      SELECTION SORT (O(n^2))
+//                                      SELECTION SORT time complexity: (O(n^2)), space complexity: (O(1))
 
 // - Store the first element as the smallest value you've seen so far
 // - Compare this item to the next item in the array until you find a smaller number
