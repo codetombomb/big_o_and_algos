@@ -1,5 +1,9 @@
 //                          RADIX SORT
 
+// Time Complexity: O(nk) ---(n is the amount of nums to sort and k is 
+//the length of the longest number)
+// Space Complexity: O(n + k)
+
 //---------------------------PSEUDO CODE---------------------------
 
 // - Define a function that accepts a list of numbers 
