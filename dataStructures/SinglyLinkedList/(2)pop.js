@@ -1,4 +1,5 @@
-//                          POPPING()
+//                          POP()
+
 // - Removing a node from the end of the Linked List 
 
 //**********************POPPING PSEUDO CODE **********************

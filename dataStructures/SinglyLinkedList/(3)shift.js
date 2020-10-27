@@ -1,4 +1,6 @@
-//                          SHIFT
+//                          SHIFT()
+
+//- Removing a node from the beginning of the Linked List
 
 //-*-*-*-*-*-*-*-*-*-*-* PSEUDO CODE -*-*-*-*-*-*-*-*-*-
 

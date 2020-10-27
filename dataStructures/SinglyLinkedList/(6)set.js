@@ -1,30 +1,15 @@
-//                          UNSHIFT()
+//                           SET()
 
-//- Adding a new node to the beginning of the Linked List
+// - Changes the value of a node based on its postion in 
+// the Linked List
 
-//********************* PSEUDO CODE **********************
+//********************** PSEUDO CODE ************************
 
-
-//- This function should accept a value
-
-//- Create a new node using the value passed to the 
-// function
-
-//- If there is no head property on the list, set the 
-// head and tail to be the newly created one
-
-//- Otherwise, set the newly created node's next property 
-// to be the current head property on the list
-
-//- Set the head property on the list to be that newly 
-// created node
-
-//- Increment the length of the list by 1
-
-//- Return the linked list
-
-
-
+//- This function should accept a value and an index
+//- Use the GET() to find the specific node
+//- If the node is not found, return false
+//- If the node is found, set the value fo that node to be
+// the value passed to the function and return true
 
 
 class Node {
@@ -82,7 +67,6 @@ class SinglyLinkedList {
         return oldHead;
     }
 
-    //  UNSHIFT
     unshift(val) {
         let newNode = new Node(val);
         if (!this.head) {
@@ -95,6 +79,32 @@ class SinglyLinkedList {
         this.length++;
         return this;
     }
+
+    get(idx) {
+        if (idx < 0 || idx >= this.length) return null;
+        let counter = 0;
+        let current = this.head;
+        while (counter !== idx) {
+            current = current.next;
+            counter++;
+        }
+        return current;
+    }
+
+    // SET 
+    set(idx, val) {
+        let node = this.get(idx);
+        if (!node) {
+            return false;
+        } else {
+            node.value = val;
+        }
+        return true;
+    }
 }
 
 const list = new SinglyLinkedList();
+list.push(1);
+list.push(2);
+list.push(3);
+list.push(4);

@@ -1,5 +1,7 @@
 //                           GET()
 
+//- Retrieving a node bu it's position in the Linked List
+
 //********************** PSEUDO CODE ************************
 
 //- This function should accept an index
@@ -88,6 +90,8 @@ class SinglyLinkedList {
         this.length++;
         return this;
     }
+
+    //GET
     get(idx) {
         if (idx < 0 || idx >= this.length) return null;
         let counter = 0;
