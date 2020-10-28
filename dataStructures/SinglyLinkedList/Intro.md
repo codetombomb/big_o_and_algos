@@ -33,7 +33,7 @@ For example, if the first element in an array of 1 million elements was removed,
 
 #Big O of SLL
 
-Singly Linked List excel at Insertion and Deletion compared to arrays. So use a SLL if you do not need random access and you just need to have some data represented in the list in an 
+Singly Linked List excel at Insertion and Deletion compared to arrays. So use a SLL if you do not need to do something like 'arr[i]' and you just need to have some data represented in the list in an order, a SLL might be the way to go.
 
 - <b>Insertion</b> - O(1) constant time
 - <b>Removal</b> - It depends... 
