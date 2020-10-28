@@ -21,24 +21,24 @@ Here is a working example of how DLL works by [VisuAlgo](https://visualgo.net/en
 <u><b>Doubly Linked Lists</b></u>
 - Able to start iterating from the tail to the head of the list using 'list.prev' like 'list.next' on SLL
 - Requires more memory becasue of the connections in two directions
-
+- Removal of nodes is constant time compared to Singly Linked List
 
 <u><b>Singly Linked Lists</b></u>
 - Can only move from nodes in one direction
 - Uses less memory than DLL
+- Removal of nodes is O(N) 
 
 
-
--- Benefits of DLL -- 
+Doubly Linked Lists are almost identical to SLLs except there is an additional pointer to previous nodes.
+They are better than SLLs for finding nodes and can be done in half the time.
+However, they do take up more memory considering the extra pointer.
 
 
 #Big O of DLL
+- <b>Insertion</b> - O(1)
+- <b>Removal</b> - O(1)
+- <b>Searching</b> - O(N)
+- <b>Access</b> -O(n)
 
-
-
-- <b>Insertion</b> - 
-- <b>Removal</b> - 
-- <b>Searching</b> - 
-- <b>Access</b> -
-
+**Technically, searching is O(N / 2), but that's still O(N)
 
