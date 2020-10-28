@@ -1,24 +1,26 @@
-//                          INSERT()
+//                          REMOVE()
 
-// - Adding a node in a Doubly Linked List by a certain position
+// - Removing a node in a Doubly Linked List by a certain position
 
-//************************ INSERT PSEUDO CODE ************************
+//************************ REMOVE PSEUDO CODE ************************
 
-// - If the index is less than zero or greater than or equal to the 
-// length, return false
+// - If hte index is less that zero or greater than or equal to the
+// length return undefined
 
-// - If the index is 0, unshift
+// - If the index is 0, shift()
 
-// - If the index is the same as the length, push
+// - If the index is the same as the length-1, pop()
 
-// - Use the get() to access the index - 1
+// - Use the get method to retrieve the item to be removed 
 
-// - Set the next and prev properties on the correct nodes to link 
-// everything together
+// - Update the next and prev properties to remove the found node from 
+// the list
 
-// - Increment the length
+// - Set the next and prev to null on the found node
 
-// - Return true
+// - Decrement the length
+
+// - Return the removed node
 
 class Node {
     constructor(val) {
@@ -126,7 +128,6 @@ class DoublyLinkedList {
         return false;
     }
 
-    // INSERT
     insert(idx, val) {
         if (idx < 0 || idx > this.length) return false;
         if (idx === 0) return !!this.unshift(val);
@@ -140,6 +141,20 @@ class DoublyLinkedList {
         aftNode.prev = newNode
         this.length++;
         return true;
+    }
+    //REMOVE
+    remove(idx) {
+        if (idx < 0 || idx >= this.length) return undefined;
+        if (idx === 0) return this.shift();
+        if (idx === this.length - 1) return this.pop();
+
+        let node = this.get(idx);
+        node.next.prev = node.prev;
+        node.prev.next = node.next;
+        node.next = null;
+        node.prev = null;
+        this.length--;
+        return node;
     }
 }
 
