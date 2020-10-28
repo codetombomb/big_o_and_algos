@@ -1,3 +1,8 @@
+//                          PUSH()
+
+// - Adding a node to the end of the Doubly Linked List 
+
+
 //************************ PUSH PSEUDO CODE ************************
 
 // - Create a new node with the value passed to the function
