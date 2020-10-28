@@ -13,6 +13,8 @@ class Node {
         this.prev = null;
     }
 }
+
+
 //                      THE DLL CLASS
 //- Define a DoublyLinkedList class. It should be constructed with 
 // a length, head, and tail attribute:
@@ -32,6 +34,9 @@ class DoublyLinkedList {
         this.tail = null;
     }
 }
+
+
+
 
 // Initialize a new node
 let first = new Node(1)
