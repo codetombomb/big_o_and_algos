@@ -34,7 +34,7 @@ They are better than SLLs for finding nodes and can be done in half the time.
 However, they do take up more memory considering the extra pointer.
 
 
-#Big O of DLL
+#Big O of DLLs
 - <b>Insertion</b> - O(1)
 - <b>Removal</b> - O(1)
 - <b>Searching</b> - O(N)
